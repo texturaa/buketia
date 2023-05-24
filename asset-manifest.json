@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/buketia/static/css/main.bdc0b43f.css",
+    "main.js": "/buketia/static/js/main.a0b954b9.js",
+    "static/media/garden.jpg": "/buketia/static/media/garden.73aa04fde5d6f2e59b5e.jpg",
+    "static/media/footer.jpg": "/buketia/static/media/footer.a0576d83ad29f619109b.jpg",
+    "static/media/Roboto-Medium.ttf": "/buketia/static/media/Roboto-Medium.2699aefade440f0e338f.ttf",
+    "static/media/Roboto-Regular.ttf": "/buketia/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
+    "static/media/Roboto-Bold.ttf": "/buketia/static/media/Roboto-Bold.35eab922fdbe4b5324d4.ttf",
+    "index.html": "/buketia/index.html",
+    "main.bdc0b43f.css.map": "/buketia/static/css/main.bdc0b43f.css.map",
+    "main.a0b954b9.js.map": "/buketia/static/js/main.a0b954b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdc0b43f.css",
+    "static/js/main.a0b954b9.js"
+  ]
+}
