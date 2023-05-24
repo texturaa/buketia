@@ -2,7 +2,13 @@ import React from 'react';
 
 import classes from "./ProductItem.module.css";
 
-const ProductItem = ({product}) => {
+const ProductItem = ({product, add}) => {
+
+    function clickButton(event) {
+        event.preventDefault();
+
+        add(product);
+    }
     return (
         <div className={classes.card}>
             <div className={classes.cardTop}>
@@ -21,7 +27,7 @@ const ProductItem = ({product}) => {
                     </div>
                 </div>
                 <div className={classes.cardName}>{product.name}</div>
-                <button className={classes.cardButton}>В корзину</button>
+                <button onClick={clickButton} className={classes.cardButton}>В корзину</button>
             </div>
         </div>
     );

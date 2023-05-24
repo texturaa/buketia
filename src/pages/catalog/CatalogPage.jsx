@@ -3,65 +3,7 @@ import React from 'react';
 import classes from "./Catalog.module.css";
 import ProductItem from "../../components/ProductItem/ProductItem";
 
-const CatalogPage = () => {
-    const products = [
-        {
-            id: 1,
-            name: "Композиция в сумочке",
-            image: "kids1-thumb.jpg",
-            price: 2200,
-            sale: 10
-        },
-        {
-            id: 2,
-            name: "Букет кустовых роз",
-            image: "kids2-thumb.jpg",
-            price: 4400,
-            sale: 10
-        },
-        {
-            id: 3,
-            name: "Кустовые розы в коробке",
-            image: "kids3-thumb.jpg",
-            price: 5500,
-            sale: 10
-        },
-        {
-            id: 4,
-            name: "Террариум для живых цветов",
-            image: "kids4-thumb.jpg",
-            price: 2750,
-            sale: 10
-        },
-        {
-            id: 5,
-            name: "Букет из 25 тюльпанов",
-            image: "kids5-thumb.jpg",
-            price: 3300,
-            sale: 10
-        },
-        {
-            id: 6,
-            name: "Букет из пионовидных роз",
-            image: "kids6-thumb.jpg",
-            price: 4400,
-            sale: 10
-        },
-        {
-            id: 7,
-            name: "Букет из эустомы",
-            image: "kids7-thumb.jpg",
-            price: 2200,
-            sale: 10
-        },
-        {
-            id: 8,
-            name: "Букет из красных роз",
-            image: "kids8-thumb.jpg",
-            price: 3300,
-            sale: 10
-        }
-    ]
+const CatalogPage = ({products, add}) => {
     return (
         <div>
             <header className={classes.sec1}>
@@ -71,7 +13,7 @@ const CatalogPage = () => {
                     <div className={classes.sec1Box}>
                         {
                             products.map(product => (
-                                <ProductItem product={product}/>
+                                <ProductItem product={product} add={add} key={product.id}/>
                             ))
                         }
                     </div>

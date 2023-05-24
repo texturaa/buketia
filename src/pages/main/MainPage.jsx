@@ -4,37 +4,8 @@ import classes from "./MainPage.module.css";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import {Link} from "react-router-dom";
 
-const MainPage = () => {
-    const products = [
-        {
-            id: 1,
-            name: "Композиция в сумочке",
-            image: "kids1-thumb.jpg",
-            price: 2200,
-            sale: 10
-        },
-        {
-            id: 2,
-            name: "Букет кустовых роз",
-            image: "kids2-thumb.jpg",
-            price: 4400,
-            sale: 10
-        },
-        {
-            id: 3,
-            name: "Кустовые розы в коробке",
-            image: "kids3-thumb.jpg",
-            price: 5500,
-            sale: 10
-        },
-        {
-            id: 4,
-            name: "Террариум для живых цветов",
-            image: "kids4-thumb.jpg",
-            price: 2750,
-            sale: 10
-        }
-    ]
+const MainPage = ({products, add}) => {
+    let countRecommend = 0;
 
 
     return (
@@ -91,9 +62,14 @@ const MainPage = () => {
 
                     <div className={classes.sec5List}>
                         {
-                            products.map(product => (
-                                <ProductItem product={product}/>
-                            ))
+                            products.map(product => {
+                                if(countRecommend !== 4) {
+                                    countRecommend++;
+                                    return (
+                                        <ProductItem product={product} add={add} key={product.id}/>
+                                    )
+                                }
+                            })
                         }
                     </div>
                 </div>

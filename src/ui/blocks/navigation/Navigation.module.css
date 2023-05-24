@@ -37,7 +37,7 @@
     color: #e3e3e3;
 }
 
-.busket {
+.basket {
     position: fixed;
     right: 15%;
     top: 35px;
@@ -56,16 +56,16 @@
     transition: .15s ease-in-out;
 }
 
-.busket:hover {
+.basket:hover {
     transform: scale(1.1);
     background-color: #263149;
 }
 
-.busket:hover .busketCount {
+.basket:hover .basketCount {
     background-color: #e70e33;
 }
 
-.busketCount {
+.basketCount {
     position: absolute;
     top: 0;
     right: 0;
@@ -81,4 +81,144 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.box {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+.boxInfo {
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0 60px rgba(0, 0, 0, .15);
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.boxInfoPrice {
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+.boxInfoButton {
+    padding: 15px 40px;
+    background-color: #ffa93b;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.boxInfoButton:hover {
+    background-color: #d57c09;
+}
+
+.boxContainer {
+    background-color: rgba(0, 0, 0, .02);
+    width: 90%;
+
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.basketItem {
+    display: flex;
+    padding: 20px;
+}
+
+.basketItem:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.basketItemImage {
+    width: 200px;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    margin-right: 50px;
+
+}
+
+.basketItemContent {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.basketItemImage img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.basketItemName {
+    font-size: 24px;
+}
+
+.basketItemAmount {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.basketItemPrice {
+
+}
+
+.basketItemControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.basketItemPlus {
+    padding: 5px 10px;
+    background-color: #ffa93b;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: .15s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.basketItemPlus:hover {
+    background-color: #d57c09;
+}
+
+.basketItemMinus {
+    padding: 5px 10px;
+    background-color: #ffa93b;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: .15s ease-in-out;
+}
+
+.basketItemMinus:hover {
+    background-color: #d57c09;
 }
