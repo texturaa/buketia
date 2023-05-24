@@ -1,0 +1,84 @@
+.nav {
+    background-color: #978baf;
+    padding: 20px 0;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo {
+    max-width: 200px;
+}
+
+.navEmpty {
+    width: 200px;
+}
+
+.navList {
+    display: flex;
+}
+
+.navListItem:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navListLink {
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .15s ease-in-out;
+}
+
+.navListLink:hover {
+    color: #e3e3e3;
+}
+
+.busket {
+    position: fixed;
+    right: 15%;
+    top: 35px;
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #364364;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+    transition: .15s ease-in-out;
+}
+
+.busket:hover {
+    transform: scale(1.1);
+    background-color: #263149;
+}
+
+.busket:hover .busketCount {
+    background-color: #e70e33;
+}
+
+.busketCount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+
+    background-color: #d62240;
+    color:  #ffffff;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

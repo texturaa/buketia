@@ -1,0 +1,91 @@
+.auth {
+    height: 70vh;
+    background-color: #978baf;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .2);
+    color: #ffffff;
+
+    max-width: 500px;
+}
+
+.form {
+
+}
+
+.title {
+    color: #ffffff;
+    font-size: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.inputs {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    color: #ffffff;
+    border: 1px solid #fff;
+
+    font-weight: 400;
+}
+
+.input:focus {
+    border-color: rgb(241, 178, 218);
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background: rgba(255, 76, 193, 0.7);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.button:hover {
+    background: rgba(255, 76, 193, 1);
+}
+
+.links {
+    margin-top: 40px;
+
+    font-weight: 400;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(241, 178, 218);
+}
+
+.link:not(:first-child) {
+    margin-top: 20px;
+}

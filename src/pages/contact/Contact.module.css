@@ -1,0 +1,115 @@
+.sec1 {
+
+}
+
+.sec1Item {
+    position: relative;
+}
+
+.sec1Image {
+    width: 100%;
+    height: 592px;
+}
+
+.sec1Text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #cccccc;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.sec2Title {
+    font-size: 54px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #444444;
+    margin-bottom: 50px;
+}
+
+.sec2Box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formTitle {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.input, .textarea {
+    display: block;
+    width: 100%;
+
+    border-radius: 4px;
+    border: 1px solid #AFAFAF;
+    color: #000000;
+
+    font-size: 16px;
+
+    padding: 12px;
+    margin: 5px 0 10px 0;
+}
+
+.input {
+
+}
+
+.textarea {
+    height: 200px;
+    max-width: 980px;
+}
+
+
+.formButton {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #2a2a2a;
+    border: 1px solid #AFAFAF;
+    padding: 12px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    max-height: 45px;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.formButton:hover {
+    background-color: #444444;
+}
+
+.info {
+
+}
+
+.infoTitle {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.infoItem {
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}

@@ -1,0 +1,102 @@
+.card {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    min-height: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTop {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.cardImage {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cardSale {
+    background: #70c05b;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+
+.cardBottom {
+    padding: 0 10px 10px;
+    margin-top: auto;
+}
+
+.cardPrice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cardPriceActual {
+    text-align: start;
+}
+
+.cardPriceTitle {
+    color: #606060;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.cardPriceBold {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+}
+
+.cardPriceName {
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.cardPriceLast {
+    text-align: end;
+}
+
+.cardName {
+    text-align: start;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+}
+
+.cardButton {
+    width: 100%;
+
+    border: 1px solid #70c05b;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cardButton:hover {
+    background-color: #70c05b;
+    color: #ffffff;
+}
