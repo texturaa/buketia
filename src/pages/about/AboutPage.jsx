@@ -12,7 +12,7 @@ const AboutPage = () => {
                     
                     <div className={classes.sec1Box}>
                         <div className={classes.sec1Item}>
-                            <img src="/images/kid.jpg" alt="kid"/>
+                            <img src="/buketia/images/kid.jpg" alt="kid"/>
                         </div>
                         <div className={classes.sec1Item}>
                             <p>
@@ -66,22 +66,22 @@ const AboutPage = () => {
 
                     <div className={classes.sec4Box}>
                         <div className={classes.sec4Item}>
-                            <img className={classes.sec4ItemImage} src="/images/personal/user1.jpg" alt="people"/>
+                            <img className={classes.sec4ItemImage} src="/buketia/images/personal/user1.jpg" alt="people"/>
                             <h3 className={classes.sec4ItemTitle}>Татьяна Любовская</h3>
                             <p className={classes.sec4ItemSubtitle}>Главный флорист</p>
                         </div>
                         <div className={classes.sec4Item}>
-                            <img className={classes.sec4ItemImage} src="/images/personal/user2.jpg" alt="people"/>
+                            <img className={classes.sec4ItemImage} src="/buketia/images/personal/user2.jpg" alt="people"/>
                             <h3 className={classes.sec4ItemTitle}>Макским Александров</h3>
                             <p className={classes.sec4ItemSubtitle}>Генеральный директор</p>
                         </div>
                         <div className={classes.sec4Item}>
-                            <img className={classes.sec4ItemImage} src="/images/personal/user3.jpg" alt="people"/>
+                            <img className={classes.sec4ItemImage} src="/buketia/images/personal/user3.jpg" alt="people"/>
                             <h3 className={classes.sec4ItemTitle}>Ева Свардовская</h3>
                             <p className={classes.sec4ItemSubtitle}>Флорист</p>
                         </div>
                         <div className={classes.sec4Item}>
-                            <img className={classes.sec4ItemImage} src="/images/personal/user4.jpg" alt="people"/>
+                            <img className={classes.sec4ItemImage} src="/buketia/images/personal/user4.jpg" alt="people"/>
                             <h3 className={classes.sec4ItemTitle}>Виктор Рактович</h3>
                             <p className={classes.sec4ItemSubtitle}>Доставщик</p>
                         </div>
